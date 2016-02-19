@@ -1,4 +1,4 @@
-## iD-area-keys
+## id-area-keys
 
 This package contains the `areaKeys` data structure extracted from the
 [OpenStreetMap iD Editor project](https://github.com/openstreetmap/iD).
@@ -20,7 +20,7 @@ In other words, the keys of L form the whitelist, and the subkeys form the black
 ### Usage:
 ```js
 
-areaKeys = require('iD-area-keys');
+areaKeys = require('id-area-keys');
 
 function isArea(way) {
     if (way.tags.area === 'yes')
