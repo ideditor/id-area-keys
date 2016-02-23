@@ -20,7 +20,7 @@ In other words, the keys of L form the whitelist, and the subkeys form the black
 ### Usage:
 ```js
 
-areaKeys = require('id-area-keys');
+var areaKeys = require('id-area-keys').areaKeys;
 
 function isArea(way) {
     if (way.tags.area === 'yes')
