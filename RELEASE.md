@@ -7,4 +7,5 @@ Whenever a new version of iD is released:
 - [ ] git add .
 - [ ] git commit -m 'vA.B.C'
 - [ ] git tag vA.B.C
-- [ ] git push origin master && git push origin --follow-tags
+- [ ] git push origin master vA.B.C
+- [ ] npm publish
