@@ -41,7 +41,7 @@ function isArea(way) {
 iD is available under the [ISC License](https://opensource.org/licenses/ISC).
 
 
-### Current Version
+### Version
 
-To keep things simple, the current version of id-area-keys is be pinned to
-the [current released version of iD](https://github.com/openstreetmap/iD/releases).
+To keep things simple, the current version of id-area-keys is pinned to the
+[currently released version of iD](https://github.com/openstreetmap/iD/releases).
