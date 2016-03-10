@@ -35,7 +35,9 @@ presets.forEach(function(d) {
     if (ignore.indexOf(key) !== -1) return;
 
     var value = d.tags[key];
-    if (d.geometry.indexOf('area') === -1 && key in areaKeys && value !== '*') {
+    if (d.geometry.indexOf('area') === -1 &&
+        d.geometry.indexOf('line') !== -1 &&
+        key in areaKeys && value !== '*') {
         areaKeys[key][value] = true;
     }
 });
