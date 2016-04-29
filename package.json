@@ -1,7 +1,7 @@
 {
   "name": "id-area-keys",
   "description": "OpenStreetMap area tags extracted from the iD editor presets",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "main": "index.js",
   "license": "ISC",
   "author": "Bryan Housel <bryan@mapbox.com>",
