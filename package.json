@@ -1,7 +1,7 @@
 {
   "name": "id-area-keys",
   "description": "OpenStreetMap area tags extracted from the iD editor presets",
-  "version": "1.9.5",
+  "version": "1.9.6",
   "main": "index.js",
   "license": "ISC",
   "author": "Bryan Housel <bryan@mapbox.com>",
@@ -13,7 +13,7 @@
   "keywords": ["OpenStreetMap"],
   "devDependencies": {
     "lodash.reject": "^4.2.0",
-    "iD": "git://github.com/openstreetmap/iD.git#v1.9.5"
+    "iD": "git://github.com/openstreetmap/iD.git#v1.9.6"
   },
   "scripts": {
     "prepublish": "node build.js"
