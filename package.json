@@ -1,7 +1,7 @@
 {
   "name": "id-area-keys",
   "description": "OpenStreetMap area tags extracted from the iD editor presets",
-  "version": "1.9.6",
+  "version": "1.9.7",
   "main": "index.umd.js",
   "jsnext:main": "index.js",
   "license": "ISC",
@@ -15,7 +15,7 @@
     "OpenStreetMap"
   ],
   "devDependencies": {
-    "iD": "git://github.com/openstreetmap/iD.git#v1.9.6",
+    "iD": "git://github.com/openstreetmap/iD.git#v1.9.7",
     "lodash.reject": "4.4.0",
     "rollup": "0.34.1",
     "rollup-plugin-json": "2.0.1"
