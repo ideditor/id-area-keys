@@ -42,4 +42,4 @@ presets.forEach(function(d) {
     }
 });
 
-fs.writeFileSync('index.js', 'module.exports.areaKeys = ' + JSON.stringify(areaKeys, null, 4) + ';');
+fs.writeFileSync('areaKeys.json', JSON.stringify(areaKeys, null, 4));
