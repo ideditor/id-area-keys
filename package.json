@@ -17,7 +17,7 @@
   "devDependencies": {
     "iD": "git://github.com/openstreetmap/iD.git#v1.9.7",
     "lodash.reject": "4.6.0",
-    "rollup": "0.34.11",
+    "rollup": "0.35.3",
     "rollup-plugin-json": "2.0.1"
   },
   "scripts": {
