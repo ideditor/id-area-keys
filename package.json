@@ -6,18 +6,14 @@
   "jsnext:main": "index.js",
   "license": "ISC",
   "author": "Bryan Housel <bryan@mapbox.com>",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/osmlab/id-area-keys.git"
-  },
-  "bugs": "https://github.com/osmlab/id-area-keys/issues",
+  "repository": "osmlab/id-area-keys",
   "keywords": [
     "OpenStreetMap"
   ],
   "devDependencies": {
     "iD": "git://github.com/openstreetmap/iD.git#v1.9.7",
     "lodash.reject": "4.6.0",
-    "rollup": "0.36.0",
+    "rollup": "0.36.3",
     "rollup-plugin-json": "2.0.2"
   },
   "scripts": {
