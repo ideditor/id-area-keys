@@ -5,43 +5,69 @@
     "amenity": {
         "bench": true
     },
-    "area": {},
-    "area:highway": {},
-    "building": {},
-    "craft": {},
-    "emergency": {},
-    "golf": {
-        "hole": true
+    "area": {
     },
-    "historic": {},
+    "area:highway": {
+    },
+    "building": {
+    },
+    "camp_site": {
+    },
+    "craft": {
+    },
+    "emergency": {
+        "designated": true,
+        "destination": true,
+        "no": true,
+        "official": true,
+        "private": true,
+        "yes": true
+    },
+    "golf": {
+        "hole": true,
+        "lateral_water_hazard": true,
+        "water_hazard": true
+    },
+    "healthcare": {
+    },
+    "historic": {
+    },
     "junction": {
         "roundabout": true
     },
-    "landuse": {},
+    "landuse": {
+    },
     "leisure": {
-        "track": true,
-        "slipway": true
+        "slipway": true,
+        "track": true
     },
     "man_made": {
         "cutline": true,
         "embankment": true,
         "pipeline": true
     },
-    "military": {},
+    "military": {
+    },
     "natural": {
         "coastline": true,
         "tree_row": true
     },
-    "office": {},
-    "piste:type": {},
-    "place": {},
+    "office": {
+    },
+    "piste:type": {
+    },
+    "place": {
+    },
     "power": {
         "line": true,
         "minor_line": true
     },
-    "public_transport": {},
-    "shop": {},
-    "tourism": {},
+    "public_transport": {
+    },
+    "shop": {
+    },
+    "tourism": {
+    },
     "waterway": {
         "canal": true,
         "ditch": true,

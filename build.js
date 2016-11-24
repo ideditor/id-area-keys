@@ -1,6 +1,7 @@
 var fs = require('fs'),
     reject = require('lodash.reject'),
-    all = require('iD/data/presets/presets.json');
+    stringify = require('json-stable-stringify'),
+    all = require('iD/data/presets/presets.json').presets;
 
 // Because of the open nature of tagging, iD will never have a complete
 // list of tags used in OSM, so we want it to have logic like "assume
@@ -42,4 +43,4 @@ presets.forEach(function(d) {
     }
 });
 
-fs.writeFileSync('areaKeys.json', JSON.stringify(areaKeys, null, 4));
+fs.writeFileSync('areaKeys.json', stringify(areaKeys, { space: 4} ));
