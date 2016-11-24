@@ -13,8 +13,8 @@ is one of these specific types".
 The `areaKeys` data structure allows testing of such conditions.
 
 The returned object L is a whitelist/blacklist of tags. A closed way
-with a tag (k, v) is considered to be an area if `k in L && !(v in L[k])`
-(see [`iD.Way#isArea()`](https://github.com/openstreetmap/iD/blob/master/js/id/core/way.js)).
+with a tag (k, v) is assumed to be an area if `k in L && !(v in L[k])`
+(see [`iD.osmWay#isArea()`](https://github.com/openstreetmap/iD/blob/67407c508126ca9e9b59cfdb71882d0dd46804e1/modules/osm/way.js#L154)).
 
 In other words, the keys of L form the whitelist, and the subkeys form the blacklist.
 
