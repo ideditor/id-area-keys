@@ -1,3 +1,7 @@
 .DS_Store
-node_modules
+.nyc_output/
+coverage/
+node_modules/
+test/
 npm-debug.log
+RELEASE.md

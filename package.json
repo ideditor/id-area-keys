@@ -15,10 +15,12 @@
     "json-stable-stringify": "1.0.1",
     "lodash.reject": "4.6.0",
     "rollup": "0.36.4",
-    "rollup-plugin-json": "2.0.2"
+    "rollup-plugin-json": "2.0.2",
+    "tap": "^8.0.0"
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "node build.js && rollup -c"
+    "build": "node build.js && rollup -c",
+    "test": "npm run build && tap test/*.js"
   }
 }

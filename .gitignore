@@ -1,4 +1,6 @@
 .DS_Store
-node_modules
+.nyc_output/
+coverage/
+node_modules/
 npm-debug.log
 index.umd.js
