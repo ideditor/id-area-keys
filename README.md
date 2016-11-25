@@ -3,6 +3,7 @@
 
 # id-area-keys
 
+### areaKeys
 
 This package contains the `areaKeys` data structure extracted from the
 [OpenStreetMap iD Editor project](https://github.com/openstreetmap/iD).
@@ -20,29 +21,50 @@ with a tag (k, v) is assumed to be an area if `k in L && !(v in L[k])`
 
 In other words, the keys of L form the whitelist, and the subkeys form the blacklist.
 
+##### Example:
 
-### Usage:
+In this subset of the `areaKeys` data structure, we can see that any closed ways
+with `landuse=*` or `leisure=*` are probably area
+features.  But closed way _exceptions_ like `leisure=slipway` or `leisure=track`
+are probably linear features.
+
 ```js
-
-var areaKeys = require('id-area-keys').areaKeys;
-
-function isArea(way) {
-    if (way.tags.area === 'yes')
-        return true;
-    if (!way.isClosed() || way.tags.area === 'no')
-        return false;
-    for (var key in way.tags)
-        if (key in areaKeys && !(way.tags[key] in areaKeys[key]))
-            return true;
-    return false;
+{
+    "areaKeys": {
+        ...
+        "landuse": {
+        },
+        "leisure": {
+            "slipway": true,
+            "track": true
+        },
+        ...
+    }
 }
+```
 
+
+### isArea(tags)
+
+This package also includes `isArea(tags)` utility function for testing
+an OpenStreetMap object against the area list.
+
+##### Example:
+
+```js
+ var ak = require('id-area-keys');
+
+ ak.isArea({ 'natural': 'wood' });
+ // true - a closed way tagged `natural=wood` is an area filled with trees
+
+ ak.isArea({ 'natural': 'tree_row' });
+ // false - a closed way tagged `natural=tree_row` is a linear ring of trees
 ```
 
 
 ### License
 
-iD is available under the [ISC License](https://opensource.org/licenses/ISC).
+id-area-keys is available under the [ISC License](https://opensource.org/licenses/ISC).
 
 
 ### Version
