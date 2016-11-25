@@ -1,79 +1,81 @@
 {
-    "aeroway": {
-        "taxiway": true
-    },
-    "amenity": {
-        "bench": true
-    },
-    "area": {
-    },
-    "area:highway": {
-    },
-    "building": {
-    },
-    "camp_site": {
-    },
-    "craft": {
-    },
-    "emergency": {
-        "designated": true,
-        "destination": true,
-        "no": true,
-        "official": true,
-        "private": true,
-        "yes": true
-    },
-    "golf": {
-        "hole": true,
-        "lateral_water_hazard": true,
-        "water_hazard": true
-    },
-    "healthcare": {
-    },
-    "historic": {
-    },
-    "junction": {
-        "roundabout": true
-    },
-    "landuse": {
-    },
-    "leisure": {
-        "slipway": true,
-        "track": true
-    },
-    "man_made": {
-        "cutline": true,
-        "embankment": true,
-        "pipeline": true
-    },
-    "military": {
-    },
-    "natural": {
-        "coastline": true,
-        "tree_row": true
-    },
-    "office": {
-    },
-    "piste:type": {
-    },
-    "place": {
-    },
-    "power": {
-        "line": true,
-        "minor_line": true
-    },
-    "public_transport": {
-    },
-    "shop": {
-    },
-    "tourism": {
-    },
-    "waterway": {
-        "canal": true,
-        "ditch": true,
-        "drain": true,
-        "river": true,
-        "stream": true,
-        "weir": true
+    "areaKeys": {
+        "aeroway": {
+            "taxiway": true
+        },
+        "amenity": {
+            "bench": true
+        },
+        "area": {
+        },
+        "area:highway": {
+        },
+        "building": {
+        },
+        "camp_site": {
+        },
+        "craft": {
+        },
+        "emergency": {
+            "designated": true,
+            "destination": true,
+            "no": true,
+            "official": true,
+            "private": true,
+            "yes": true
+        },
+        "golf": {
+            "hole": true,
+            "lateral_water_hazard": true,
+            "water_hazard": true
+        },
+        "healthcare": {
+        },
+        "historic": {
+        },
+        "junction": {
+            "roundabout": true
+        },
+        "landuse": {
+        },
+        "leisure": {
+            "slipway": true,
+            "track": true
+        },
+        "man_made": {
+            "cutline": true,
+            "embankment": true,
+            "pipeline": true
+        },
+        "military": {
+        },
+        "natural": {
+            "coastline": true,
+            "tree_row": true
+        },
+        "office": {
+        },
+        "piste:type": {
+        },
+        "place": {
+        },
+        "power": {
+            "line": true,
+            "minor_line": true
+        },
+        "public_transport": {
+        },
+        "shop": {
+        },
+        "tourism": {
+        },
+        "waterway": {
+            "canal": true,
+            "ditch": true,
+            "drain": true,
+            "river": true,
+            "stream": true,
+            "weir": true
+        }
     }
 }

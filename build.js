@@ -43,4 +43,4 @@ presets.forEach(function(d) {
     }
 });
 
-fs.writeFileSync('areaKeys.json', stringify(areaKeys, { space: 4} ));
+fs.writeFileSync('areaKeys.json', stringify({ areaKeys: areaKeys }, { space: 4 }));
