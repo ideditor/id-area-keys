@@ -8,7 +8,9 @@
   "author": "Bryan Housel <bryan@mapbox.com>",
   "repository": "osmlab/id-area-keys",
   "keywords": [
-    "OpenStreetMap"
+    "OpenStreetMap",
+    "area",
+    "tags"
   ],
   "devDependencies": {
     "iD": "git://github.com/openstreetmap/iD.git#v2.0.0",
