@@ -1,6 +1,8 @@
-## id-area-keys
-
 [![npm version](https://badge.fury.io/js/id-area-keys.svg)](https://badge.fury.io/js/id-area-keys)
+[![Build Status](https://circleci.com/gh/osmlab/id-area-keys/tree/master.svg?style=shield)](https://circleci.com/gh/osmlab/id-area-keys)
+
+# id-area-keys
+
 
 This package contains the `areaKeys` data structure extracted from the
 [OpenStreetMap iD Editor project](https://github.com/openstreetmap/iD).
