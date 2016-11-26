@@ -32,6 +32,7 @@ test('id-area-keys', function(t) {
         });
 
         t.test('areaKeys skips certain keys', function(t) {
+            t.false(ak.areaKeys.hasOwnProperty('area'), 'area');
             t.false(ak.areaKeys.hasOwnProperty('barrier'), 'barrier');
             t.false(ak.areaKeys.hasOwnProperty('highway'), 'highway');
             t.false(ak.areaKeys.hasOwnProperty('footway'), 'footway');

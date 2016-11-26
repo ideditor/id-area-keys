@@ -44,10 +44,12 @@ are probably linear features.
 ```
 
 
-### isArea(tags)
+### isArea
 
-This package also includes `isArea(tags)` utility function for testing
-an OpenStreetMap object against the area list.
+This package also includes `isArea` utility function for testing
+an OpenStreetMap object against the area list.  The `isArea` function
+accepts an `Object` of tags, and returns `true` if those tags imply
+an area feature, or `false` if those tags imply a linear feature.
 
 ##### Example:
 
@@ -60,6 +62,19 @@ an OpenStreetMap object against the area list.
  ak.isArea({ 'natural': 'tree_row' });
  // false - a closed way tagged `natural=tree_row` is a linear ring of trees
 ```
+
+
+### area=yes / area=no
+
+In OpenStreetMap, an `area` tag can be used to force or disambiguate whether
+a closed way should be treated as a filled area (`area=yes`) or as a linear
+ring (`area=no`).
+
+Because `area` tags override the other tags, an `area` key does not appear
+in `areaKeys` data structure, and users of this library must either handle
+`area=yes`/`area=no` tags in their own code, or use this library's exported
+[`isArea` function](#isarea), which does contain code to handle `area=yes`/`area=no`.
+
 
 
 ### License

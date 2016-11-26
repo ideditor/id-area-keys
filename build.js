@@ -15,7 +15,7 @@ var fs = require('fs'),
 // (see `iD.Way#isArea()`). In other words, the keys of L form the whitelist,
 // and the subkeys form the blacklist.
 var areaKeys = {},
-    ignore = ['barrier', 'highway', 'footway', 'railway', 'type'],
+    ignore = ['area', 'barrier', 'highway', 'footway', 'railway', 'type'],
     presets = reject(all, 'suggestion');
 
 // whitelist
