@@ -16,7 +16,7 @@
     "iD": "git://github.com/openstreetmap/iD.git#v2.0.1",
     "json-stable-stringify": "1.0.1",
     "lodash.reject": "4.6.0",
-    "rollup": "0.41.1",
+    "rollup": "0.41.2",
     "rollup-plugin-json": "2.0.2",
     "tap": "^9.0.0"
   },
