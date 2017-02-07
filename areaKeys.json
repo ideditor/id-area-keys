@@ -49,6 +49,7 @@
         },
         "natural": {
             "coastline": true,
+            "ridge": true,
             "tree_row": true
         },
         "office": {
