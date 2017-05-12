@@ -1,8 +1,10 @@
 env:
-  - VERSION=4
-  - VERSION=6
-  - VERSION=7
+  - NODE_VERSION=4
+  - NODE_VERSION=6
+  - NODE_VERSION=7
 
 command:
-  - echo 'hi!'
-  - echo "Version is $VERSION"
+  - nvm install $NODE_VERSION
+  - nvm alias default $NODE_VERSION
+  - npm --version
+  - node --version
