@@ -1,3 +1,5 @@
 dependencies:
   pre:
-    - case $CIRCLE_NODE_INDEX in 0) NODE_VERSION=4 ;; 1) NODE_VERSION=5 ;; 2) NODE_VERSION=6;; 3) NODE_VERSION=7;; esac; nvm install $NODE_VERSION && nvm alias default $NODE_VERSION
+    # Install https://github.com/michaelcontento/circleci-matrix
+    - curl -fsSL https://git.io/v2Ifn | bash
+    - circleci-matrix

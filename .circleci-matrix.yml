@@ -1,0 +1,8 @@
+env:
+  - VERSION=4
+  - VERSION=6
+  - VERSION=7
+
+command:
+  - echo 'hi!'
+  - echo "Version is $VERSION"
