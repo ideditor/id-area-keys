@@ -2,4 +2,6 @@ dependencies:
   pre:
     # Install https://github.com/michaelcontento/circleci-matrix
     - curl -fsSL https://git.io/v2Ifn | bash
+test:
+  pre:
     - circleci-matrix
