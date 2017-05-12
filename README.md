@@ -3,6 +3,8 @@
 
 # id-area-keys
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/osmlab/id-area-keys.svg)](https://greenkeeper.io/)
+
 ### areaKeys
 
 This package contains the `areaKeys` data structure extracted from the
