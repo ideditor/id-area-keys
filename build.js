@@ -24,7 +24,7 @@ presets.forEach(function(d) {
     if (!key) return;
     if (ignore.indexOf(key) !== -1) return;
 
-    if (d.geometry.indexOf('area') !== -1) {
+    if (d.geometry.indexOf('area') !== -1) {   // probably an area..
         areaKeys[key] = areaKeys[key] || {};
     }
 });
@@ -36,9 +36,9 @@ presets.forEach(function(d) {
     if (ignore.indexOf(key) !== -1) return;
 
     var value = d.tags[key];
-    if (d.geometry.indexOf('area') === -1 &&
-        d.geometry.indexOf('line') !== -1 &&
-        key in areaKeys && value !== '*') {
+    if (key in areaKeys &&                      // probably an area...
+        d.geometry.indexOf('line') !== -1 &&    // but sometimes a line
+        value !== '*') {
         areaKeys[key][value] = true;
     }
 });
