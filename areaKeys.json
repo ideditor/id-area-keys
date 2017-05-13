@@ -1,6 +1,7 @@
 {
     "areaKeys": {
         "aeroway": {
+            "runway": true,
             "taxiway": true
         },
         "amenity": {
@@ -11,6 +12,8 @@
         "building": {
         },
         "camp_site": {
+        },
+        "club": {
         },
         "craft": {
         },
@@ -41,13 +44,17 @@
             "track": true
         },
         "man_made": {
+            "breakwater": true,
             "cutline": true,
             "embankment": true,
+            "groyne": true,
+            "pier": true,
             "pipeline": true
         },
         "military": {
         },
         "natural": {
+            "cliff": true,
             "coastline": true,
             "ridge": true,
             "tree_row": true
@@ -63,6 +70,7 @@
             "minor_line": true
         },
         "public_transport": {
+            "platform": true
         },
         "shop": {
         },
@@ -70,6 +78,7 @@
         },
         "waterway": {
             "canal": true,
+            "dam": true,
             "ditch": true,
             "drain": true,
             "river": true,
