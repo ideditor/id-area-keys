@@ -1,6 +1,6 @@
 .DS_Store
 .nyc_output/
-circle.yml
+.travis.yml
 coverage/
 node_modules/
 npm-debug.log
