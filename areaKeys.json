@@ -1,5 +1,19 @@
 {
     "areaKeys": {
+        "addr:*": {
+        },
+        "aerialway": {
+            "cable_car": true,
+            "chair_lift": true,
+            "drag_lift": true,
+            "gondola": true,
+            "goods": true,
+            "magic_carpet": true,
+            "mixed_lift": true,
+            "platter": true,
+            "rope_tow": true,
+            "t-bar": true
+        },
         "aeroway": {
             "runway": true,
             "taxiway": true
@@ -8,6 +22,12 @@
             "bench": true
         },
         "area:highway": {
+        },
+        "attraction": {
+            "dark_ride": true,
+            "river_rafting": true,
+            "train": true,
+            "water_slide": true
         },
         "building": {
         },
@@ -34,6 +54,8 @@
         },
         "historic": {
         },
+        "industrial": {
+        },
         "junction": {
             "roundabout": true
         },
@@ -45,6 +67,7 @@
         },
         "man_made": {
             "breakwater": true,
+            "crane": true,
             "cutline": true,
             "embankment": true,
             "groyne": true,
@@ -64,6 +87,11 @@
         "piste:type": {
         },
         "place": {
+        },
+        "playground": {
+            "balancebeam": true,
+            "slide": true,
+            "zipwire": true
         },
         "power": {
             "line": true,
