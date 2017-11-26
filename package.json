@@ -18,7 +18,7 @@
     "lodash.reject": "4.6.0",
     "rollup": "0.51.3",
     "rollup-plugin-json": "2.2.0",
-    "tap": "^10.4.0"
+    "tap": "^11.0.0"
   },
   "scripts": {
     "prepublish": "npm run build",
