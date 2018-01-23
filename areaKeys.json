@@ -57,6 +57,7 @@
         "industrial": {
         },
         "junction": {
+            "circular": true,
             "roundabout": true
         },
         "landuse": {
