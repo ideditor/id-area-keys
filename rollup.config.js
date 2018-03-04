@@ -1,11 +1,11 @@
 import json from 'rollup-plugin-json';
 
 export default {
-    input: 'index.js',
+    input: 'index.mjs',
     output: {
         name: 'areaKeys',
-        file: 'index.umd.js',
-        format: 'umd',
+        file: 'index.js',
+        format: 'umd'
     },
     plugins: [
         json()

@@ -1,5 +1,10 @@
-import { areaKeys } from './areaKeys.json';
-export { areaKeys};
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.areaKeys = {})));
+}(this, (function (exports) { 'use strict';
+
+var areaKeys = {"addr:*":{},"aerialway":{"cable_car":true,"chair_lift":true,"drag_lift":true,"gondola":true,"goods":true,"magic_carpet":true,"mixed_lift":true,"platter":true,"rope_tow":true,"t-bar":true},"aeroway":{"runway":true,"taxiway":true},"amenity":{"bench":true},"area:highway":{},"attraction":{"dark_ride":true,"river_rafting":true,"train":true,"water_slide":true},"building":{},"camp_site":{},"club":{},"craft":{},"emergency":{"designated":true,"destination":true,"no":true,"official":true,"private":true,"yes":true},"golf":{"hole":true,"lateral_water_hazard":true,"water_hazard":true},"healthcare":{},"historic":{},"industrial":{},"junction":{"circular":true,"roundabout":true},"landuse":{},"leisure":{"slipway":true,"track":true},"man_made":{"breakwater":true,"crane":true,"cutline":true,"embankment":true,"groyne":true,"pier":true,"pipeline":true},"military":{},"natural":{"cliff":true,"coastline":true,"ridge":true,"tree_row":true},"office":{},"piste:type":{},"place":{},"playground":{"balancebeam":true,"slide":true,"zipwire":true},"power":{"line":true,"minor_line":true},"public_transport":{"platform":true},"shop":{},"tourism":{},"waterway":{"canal":true,"dam":true,"ditch":true,"drain":true,"river":true,"stream":true,"weir":true}};
 
 /**
  * Test if the given OpenStreetMap tags imply that a
@@ -16,7 +21,7 @@ export { areaKeys};
  *   ak.isArea({ 'natural': 'tree_row' });
  *   // false - a closed way tagged `natural=tree_row` is a linear ring of trees
  */
-export function isArea(tags) {
+function isArea(tags) {
     if (typeof tags !== 'object')
         return false;
 
@@ -30,3 +35,10 @@ export function isArea(tags) {
 
     return false;
 }
+
+exports.areaKeys = areaKeys;
+exports.isArea = isArea;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
