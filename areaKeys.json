@@ -2,6 +2,9 @@
     "areaKeys": {
         "addr:*": {
         },
+        "advertising": {
+            "billboard": true
+        },
         "aerialway": {
             "cable_car": true,
             "chair_lift": true,
@@ -17,6 +20,8 @@
         "aeroway": {
             "runway": true,
             "taxiway": true
+        },
+        "allotments": {
         },
         "amenity": {
             "bench": true
