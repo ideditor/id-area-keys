@@ -9,6 +9,6 @@ export default {
         name: 'areaKeys'
     },
     plugins: [
-        json({ indent: false })
+        json({ indent: '' })
     ]
 };
