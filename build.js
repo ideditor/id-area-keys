@@ -1,7 +1,7 @@
-var fs = require('fs'),
-    reject = require('lodash.reject'),
-    stringify = require('json-stable-stringify'),
-    all = require('iD/data/presets/presets.json').presets;
+var fs = require('fs');
+var reject = require('lodash.reject');
+var stringify = require('json-stable-stringify');
+var all = require('iD/data/presets/presets.json').presets;
 
 // Because of the open nature of tagging, iD will never have a complete
 // list of tags used in OSM, so we want it to have logic like "assume
@@ -14,9 +14,9 @@ var fs = require('fs'),
 // with a tag (k, v) is considered to be an area if `k in L && !(v in L[k])`
 // (see `iD.Way#isArea()`). In other words, the keys of L form the whitelist,
 // and the subkeys form the blacklist.
-var areaKeys = {},
-    ignore = ['area', 'barrier', 'highway', 'footway', 'railway', 'type'],
-    presets = reject(all, 'suggestion');
+var areaKeys = {};
+var ignore = ['area', 'barrier', 'highway', 'footway', 'railway', 'type'];
+var presets = reject(all, 'suggestion');
 
 // whitelist
 presets.forEach(function(d) {
