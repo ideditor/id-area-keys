@@ -16,12 +16,11 @@
     "iD": "git://github.com/openstreetmap/iD.git#v2.9.0",
     "json-stable-stringify": "~1.0.1",
     "lodash.reject": "~4.6.0",
-    "rollup": "~0.60.0",
+    "rollup": "~0.63.0",
     "rollup-plugin-json": "^3.0.0",
     "tap": "^12.0.0"
   },
   "scripts": {
-    "prepublish": "npm run build",
     "build": "node build.js && rollup -c",
     "test": "npm run build && tap test/*.js"
   }
