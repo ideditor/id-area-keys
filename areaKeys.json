@@ -109,6 +109,7 @@
         "shop": {
         },
         "tourism": {
+            "artwork": true
         },
         "waterway": {
             "canal": true,
