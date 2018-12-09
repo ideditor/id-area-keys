@@ -31,8 +31,11 @@
         "attraction": {
             "dark_ride": true,
             "river_rafting": true,
+            "summer_toboggan": true,
             "train": true,
             "water_slide": true
+        },
+        "bridge:support": {
         },
         "building": {
         },
@@ -60,6 +63,8 @@
         "historic": {
         },
         "industrial": {
+        },
+        "internet_access": {
         },
         "junction": {
             "circular": true,
@@ -91,6 +96,13 @@
         "office": {
         },
         "piste:type": {
+            "downhill": true,
+            "hike": true,
+            "ice_skate": true,
+            "nordic": true,
+            "skitour": true,
+            "sled": true,
+            "sleigh": true
         },
         "place": {
         },
@@ -100,11 +112,14 @@
             "zipwire": true
         },
         "power": {
+            "cable": true,
             "line": true,
             "minor_line": true
         },
         "public_transport": {
             "platform": true
+        },
+        "seamark:type": {
         },
         "shop": {
         },
