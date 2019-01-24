@@ -119,12 +119,21 @@
         "public_transport": {
             "platform": true
         },
+        "residential": {
+        },
         "seamark:type": {
         },
         "shop": {
         },
         "tourism": {
             "artwork": true
+        },
+        "traffic_calming": {
+            "bump": true,
+            "cushion": true,
+            "dip": true,
+            "hump": true,
+            "rumble_strip": true
         },
         "waterway": {
             "canal": true,
