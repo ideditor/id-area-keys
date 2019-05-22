@@ -11,13 +11,16 @@
             "drag_lift": true,
             "gondola": true,
             "goods": true,
+            "j-bar": true,
             "magic_carpet": true,
             "mixed_lift": true,
             "platter": true,
             "rope_tow": true,
-            "t-bar": true
+            "t-bar": true,
+            "zip_line": true
         },
         "aeroway": {
+            "jet_bridge": true,
             "runway": true,
             "taxiway": true
         },
@@ -39,6 +42,8 @@
         },
         "building": {
         },
+        "building:part": {
+        },
         "camp_site": {
         },
         "club": {
@@ -54,13 +59,17 @@
             "yes": true
         },
         "golf": {
+            "cartpath": true,
             "hole": true,
-            "lateral_water_hazard": true,
-            "water_hazard": true
+            "path": true
         },
         "healthcare": {
         },
         "historic": {
+        },
+        "indoor": {
+            "corridor": true,
+            "wall": true
         },
         "industrial": {
         },
@@ -68,6 +77,7 @@
         },
         "junction": {
             "circular": true,
+            "jughandle": true,
             "roundabout": true
         },
         "landuse": {
@@ -80,6 +90,7 @@
             "breakwater": true,
             "crane": true,
             "cutline": true,
+            "dyke": true,
             "embankment": true,
             "groyne": true,
             "pier": true,
@@ -88,10 +99,12 @@
         "military": {
         },
         "natural": {
+            "bay": true,
             "cliff": true,
             "coastline": true,
             "ridge": true,
-            "tree_row": true
+            "tree_row": true,
+            "valley": true
         },
         "office": {
         },
@@ -125,14 +138,22 @@
         },
         "shop": {
         },
+        "tactile_paving": {
+        },
+        "telecom": {
+        },
         "tourism": {
-            "artwork": true
+            "artwork": true,
+            "attraction": true
         },
         "traffic_calming": {
             "bump": true,
+            "chicane": true,
+            "choker": true,
             "cushion": true,
             "dip": true,
             "hump": true,
+            "island": true,
             "rumble_strip": true
         },
         "waterway": {
@@ -140,6 +161,7 @@
             "dam": true,
             "ditch": true,
             "drain": true,
+            "lock_gate": true,
             "river": true,
             "stream": true,
             "weir": true

@@ -1,7 +1,7 @@
 {
   "name": "id-area-keys",
   "description": "OpenStreetMap area tags extracted from the iD editor presets",
-  "version": "2.13.0",
+  "version": "2.15.0",
   "main": "index.js",
   "module": "index.mjs",
   "license": "ISC",
@@ -13,15 +13,17 @@
     "tags"
   ],
   "devDependencies": {
-    "iD": "git://github.com/openstreetmap/iD.git#v2.13.0",
+    "iD": "git://github.com/openstreetmap/iD.git#v2.15.0",
     "json-stable-stringify": "~1.0.1",
-    "lodash.reject": "~4.6.0",
-    "rollup": "~1.0.0",
-    "rollup-plugin-json": "~3.1.0",
-    "tap": "^12.1.0"
+    "rollup": "^1.12.3",
+    "rollup-plugin-json": "^4.0.0",
+    "tap": "^14.1.3"
   },
   "scripts": {
     "build": "node build.js && rollup -c",
     "test": "npm run build && tap test/*.js"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   }
 }

@@ -1,5 +1,4 @@
 var fs = require('fs');
-var reject = require('lodash.reject');
 var stringify = require('json-stable-stringify');
 var all = require('iD/data/presets/presets.json').presets;
 
@@ -16,10 +15,10 @@ var all = require('iD/data/presets/presets.json').presets;
 // and the subkeys form the blacklist.
 var areaKeys = {};
 var ignore = ['area', 'barrier', 'highway', 'footway', 'railway', 'type'];
-var presets = reject(all, 'suggestion');
+var presets = Object.values(all).filter(p => !p.suggestion);
 
 // whitelist
-presets.forEach(function(d) {
+presets.forEach(d => {
     for (var key in d.tags) break;
     if (!key) return;
     if (ignore.indexOf(key) !== -1) return;
@@ -30,7 +29,7 @@ presets.forEach(function(d) {
 });
 
 // blacklist
-presets.forEach(function(d) {
+presets.forEach(d => {
     for (var key in d.tags) break;
     if (!key) return;
     if (ignore.indexOf(key) !== -1) return;
