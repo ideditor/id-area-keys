@@ -21,6 +21,7 @@
         },
         "aeroway": {
             "jet_bridge": true,
+            "parking_position": true,
             "runway": true,
             "taxiway": true
         },
@@ -43,8 +44,6 @@
         "building": {
         },
         "building:part": {
-        },
-        "camp_site": {
         },
         "club": {
         },
@@ -94,9 +93,11 @@
             "embankment": true,
             "groyne": true,
             "pier": true,
-            "pipeline": true
+            "pipeline": true,
+            "torii": true
         },
         "military": {
+            "trench": true
         },
         "natural": {
             "bay": true,
@@ -124,6 +125,8 @@
             "slide": true,
             "zipwire": true
         },
+        "polling_station": {
+        },
         "power": {
             "cable": true,
             "line": true,
@@ -137,8 +140,6 @@
         "seamark:type": {
         },
         "shop": {
-        },
-        "tactile_paving": {
         },
         "telecom": {
         },
