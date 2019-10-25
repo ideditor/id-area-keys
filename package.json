@@ -1,7 +1,7 @@
 {
   "name": "id-area-keys",
   "description": "OpenStreetMap area tags extracted from the iD editor presets",
-  "version": "2.15.0",
+  "version": "2.16.0",
   "main": "index.js",
   "module": "index.mjs",
   "license": "ISC",
