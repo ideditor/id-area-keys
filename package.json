@@ -15,7 +15,7 @@
   "devDependencies": {
     "iD": "git://github.com/openstreetmap/iD.git#v2.16.0",
     "json-stable-stringify": "~1.0.1",
-    "rollup": "^1.25.2",
+    "rollup": "^2.0.0",
     "rollup-plugin-json": "^4.0.0",
     "tap": "^14.8.2"
   },
