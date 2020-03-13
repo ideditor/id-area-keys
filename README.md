@@ -1,6 +1,6 @@
 [![npm version](https://badge.fury.io/js/id-area-keys.svg)](https://badge.fury.io/js/id-area-keys)
 [![Build Status](https://travis-ci.org/osmlab/id-area-keys.svg?branch=master)](https://travis-ci.org/osmlab/id-area-keys)
-[![Greenkeeper badge](https://badges.greenkeeper.io/osmlab/id-area-keys.svg)](https://greenkeeper.io/)
+
 
 # id-area-keys
 
