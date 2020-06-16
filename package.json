@@ -1,16 +1,14 @@
 {
   "name": "id-area-keys",
-  "description": "OpenStreetMap area tags extracted from the iD editor presets",
   "version": "2.16.0",
+  "license": "ISC",
+  "repository": "osmlab/id-area-keys",
+  "description": "OpenStreetMap area tags extracted from the iD editor presets",
+  "keywords": ["OpenStreetMap", "area", "tags"],
   "main": "index.js",
   "module": "index.mjs",
-  "license": "ISC",
-  "author": "Bryan Housel <bryan@mapbox.com>",
-  "repository": "osmlab/id-area-keys",
-  "keywords": [
-    "OpenStreetMap",
-    "area",
-    "tags"
+  "contributors": [
+    "Bryan Housel <bhousel@gmail.com> (https://github.com/bhousel)"
   ],
   "devDependencies": {
     "iD": "git://github.com/openstreetmap/iD.git#v2.16.0",
