@@ -22,7 +22,7 @@ test('id-area-keys', function(t) {
             t.end();
         });
 
-        t.test('areaKeys includes certain blacklisted keys', function(t) {
+        t.test('areaKeys includes certain discardlisted keys', function(t) {
             t.true(ak.areaKeys.amenity.hasOwnProperty('bench'), 'bench');
             t.true(ak.areaKeys.leisure.hasOwnProperty('track'), 'track');
             t.true(ak.areaKeys.man_made.hasOwnProperty('pipeline'), 'pipeline');

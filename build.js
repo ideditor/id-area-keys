@@ -9,15 +9,15 @@ var all = require('iD/data/presets/presets.json').presets;
 // that allows testing of such conditions, based on the presets designated
 // as as supporting (or not supporting) the area geometry.
 //
-// The returned object L is a whitelist/blacklist of tags. A closed way
+// The returned object L is a keeplist/discardlist of tags. A closed way
 // with a tag (k, v) is considered to be an area if `k in L && !(v in L[k])`
-// (see `iD.Way#isArea()`). In other words, the keys of L form the whitelist,
-// and the subkeys form the blacklist.
+// (see `iD.osmWay#isArea()`). In other words, the keys of L form the keeplist,
+// and the subkeys form the discardlist.
 var areaKeys = {};
 var ignore = ['area', 'barrier', 'highway', 'footway', 'railway', 'type'];
 var presets = Object.values(all).filter(p => !p.suggestion);
 
-// whitelist
+// keeplist
 presets.forEach(d => {
     for (var key in d.tags) break;
     if (!key) return;
@@ -28,7 +28,7 @@ presets.forEach(d => {
     }
 });
 
-// blacklist
+// discardlist
 presets.forEach(d => {
     for (var key in d.tags) break;
     if (!key) return;

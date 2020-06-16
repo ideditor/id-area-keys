@@ -16,11 +16,11 @@ is one of these specific types".
 
 The `areaKeys` data structure allows testing of such conditions.
 
-The returned object L is a whitelist/blacklist of tags. A closed way
+The returned object L is a keeplist/discardlist of tags. A closed way
 with a tag (k, v) is assumed to be an area if `k in L && !(v in L[k])`
 (see [`iD.osmWay#isArea()`](https://github.com/openstreetmap/iD/blob/67407c508126ca9e9b59cfdb71882d0dd46804e1/modules/osm/way.js#L154)).
 
-In other words, the keys of L form the whitelist, and the subkeys form the blacklist.
+In other words, the keys of L form the keeplist, and the subkeys form the discardlist.
 
 ##### Example:
 
@@ -31,16 +31,15 @@ are probably linear features.
 
 ```js
 {
-    "areaKeys": {
-        ...
-        "landuse": {
-        },
-        "leisure": {
-            "slipway": true,
-            "track": true
-        },
-        ...
-    }
+  "areaKeys": {
+    ...
+    "landuse": { },
+    "leisure": {
+      "slipway": true,
+      "track": true
+    },
+    ...
+  }
 }
 ```
 
@@ -55,7 +54,7 @@ an area feature, or `false` if those tags imply a linear feature.
 ##### Example:
 
 ```js
- var ak = require('id-area-keys');
+ const ak = require('id-area-keys');
 
  ak.isArea({ 'natural': 'wood' });
  // true - a closed way tagged `natural=wood` is an area filled with trees
@@ -85,5 +84,5 @@ id-area-keys is available under the [ISC License](https://opensource.org/license
 
 ### Version
 
-To keep things simple, the current version of id-area-keys is pinned to the
-[currently released version of iD](https://github.com/openstreetmap/iD/releases).
+To keep things simple, the released version of id-area-keys is pinned to a
+[recently released version of iD](https://github.com/openstreetmap/iD/releases).
