@@ -15,7 +15,7 @@
     "Bryan Housel <bhousel@gmail.com> (https://github.com/bhousel)"
   ],
   "devDependencies": {
-    "iD": "git://github.com/openstreetmap/iD.git#v2.17.3",
+    "iD": "git://github.com/openstreetmap/iD.git#v2.18.3",
     "@rollup/plugin-json": "^4.1.0",
     "json-stable-stringify": "~1.0.1",
     "npm-run-all": "^4.1.5",
