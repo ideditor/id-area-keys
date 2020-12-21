@@ -1,5 +1,5 @@
+[![build](https://github.com/osmlab/id-area-keys/workflows/build/badge.svg)](https://github.com/osmlab/id-area-keys/actions?query=workflow%3A%22build%22)
 [![npm version](https://badge.fury.io/js/id-area-keys.svg)](https://badge.fury.io/js/id-area-keys)
-[![Build Status](https://travis-ci.org/osmlab/id-area-keys.svg?branch=main)](https://travis-ci.org/osmlab/id-area-keys)
 
 
 # id-area-keys
