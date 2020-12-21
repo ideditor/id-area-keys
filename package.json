@@ -1,6 +1,6 @@
 {
   "name": "id-area-keys",
-  "version": "2.17.3",
+  "version": "2.19.5",
   "license": "ISC",
   "repository": "github:osmlab/id-area-keys",
   "description": "OpenStreetMap area tags extracted from the iD editor presets",
