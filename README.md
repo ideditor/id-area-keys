@@ -85,4 +85,4 @@ id-area-keys is available under the [ISC License](https://opensource.org/license
 ### Version
 
 To keep things simple, the released version of id-area-keys is pinned to a
-[recently released version of iD](https://github.com/openstreetmap/iD/releases).
+[recently released version of the iD presets](https://github.com/openstreetmap/id-tagging-schema).
