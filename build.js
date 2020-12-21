@@ -1,6 +1,6 @@
 const fs = require('fs');
 const stringify = require('json-stable-stringify');
-const all = require('iD/data/presets/presets.json');
+const all = require('@openstreetmap/id-tagging-schema/dist/presets.json');
 
 // Because of the open nature of tagging, iD will never have a complete
 // list of tags used in OSM, so we want it to have logic like "assume
