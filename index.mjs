@@ -17,16 +17,13 @@ export { areaKeys };
  *   // false - a closed way tagged `natural=tree_row` is a linear ring of trees
  */
 export function isArea(tags) {
-    if (typeof tags !== 'object')
-        return false;
+  if (typeof tags !== 'object') return false;
+  if (tags.area === 'yes') return true;
+  if (tags.area === 'no')  return false;
 
-    if (tags.area === 'yes')
-        return true;
-    if (tags.area === 'no')
-        return false;
-    for (var key in tags)
-        if (key in areaKeys && !(tags[key] in areaKeys[key]))
-            return true;
+  for (var key in tags) {
+    if (key in areaKeys && !(tags[key] in areaKeys[key])) return true;
+  }
 
-    return false;
+  return false;
 }

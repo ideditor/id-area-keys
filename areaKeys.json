@@ -51,6 +51,8 @@
     },
     "demolished:building": {
     },
+    "disused:amenity": {
+    },
     "disused:railway": {
     },
     "disused:shop": {
@@ -94,6 +96,7 @@
       "cutline": true,
       "dyke": true,
       "embankment": true,
+      "goods_conveyor": true,
       "groyne": true,
       "pier": true,
       "pipeline": true,
