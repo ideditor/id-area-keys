@@ -1,5 +1,5 @@
-import { areaKeys } from './areaKeys.json';
-export { areaKeys };
+import json from './areaKeys.json';
+export var { areaKeys } = json;
 
 /**
  * Test if the given OpenStreetMap tags imply that a
