@@ -25,7 +25,7 @@
   "scripts": {
     "all": "npm run test",
     "build": "node build.js && rollup -c",
-    "test": "npm run build && tap --reporter terse test/*.js"
+    "test": "npm run build && tap --reporter terse --no-coverage test/*.js"
   },
   "engines": {
     "node": ">=10"
