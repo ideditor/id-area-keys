@@ -1,8 +1,12 @@
 .DS_Store
+npm-debug.log
+package-lock.json
+RELEASE.js
+rollup.config.js
+
+.github/
 .nyc_output/
-.travis.yml
+.vscode/
 coverage/
 node_modules/
-npm-debug.log
-RELEASE.md
 test/

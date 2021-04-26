@@ -1,6 +1,8 @@
 .DS_Store
-.nyc_output/
-coverage/
-node_modules/
 npm-debug.log
 package-lock.json
+
+.nyc_output/
+.vscode/
+coverage/
+node_modules/
