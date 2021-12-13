@@ -35,8 +35,8 @@ presets.forEach(d => {
   if (ignore.indexOf(key) !== -1) return;
 
   var value = d.tags[key];
-  if (key in areaKeys &&                      // probably an area...
-    d.geometry.indexOf('line') !== -1 &&    // but sometimes a line
+  if (key in areaKeys &&                     // probably an area...
+    d.geometry.indexOf('line') !== -1 &&     // but sometimes a line
     value !== '*') {
     areaKeys[key][value] = true;
   }
