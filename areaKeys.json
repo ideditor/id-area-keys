@@ -1,7 +1,6 @@
 {
   "areaKeys": {
-    "addr:*": {
-    },
+    "addr:*": {},
     "advertising": {
       "billboard": true
     },
@@ -25,13 +24,11 @@
       "runway": true,
       "taxiway": true
     },
-    "allotments": {
-    },
+    "allotments": {},
     "amenity": {
       "bench": true
     },
-    "area:highway": {
-    },
+    "area:highway": {},
     "attraction": {
       "dark_ride": true,
       "river_rafting": true,
@@ -39,24 +36,15 @@
       "train": true,
       "water_slide": true
     },
-    "bridge:support": {
-    },
-    "building": {
-    },
-    "building:part": {
-    },
-    "club": {
-    },
-    "craft": {
-    },
-    "demolished:building": {
-    },
-    "disused:amenity": {
-    },
-    "disused:railway": {
-    },
-    "disused:shop": {
-    },
+    "bridge:support": {},
+    "building": {},
+    "building:part": {},
+    "club": {},
+    "craft": {},
+    "demolished:building": {},
+    "disused:amenity": {},
+    "disused:railway": {},
+    "disused:shop": {},
     "emergency": {
       "designated": true,
       "destination": true,
@@ -70,22 +58,16 @@
       "hole": true,
       "path": true
     },
-    "healthcare": {
-    },
-    "historic": {
-    },
+    "healthcare": {},
+    "historic": {},
     "indoor": {
       "corridor": true,
       "wall": true
     },
-    "industrial": {
-    },
-    "internet_access": {
-    },
-    "junction": {
-    },
-    "landuse": {
-    },
+    "industrial": {},
+    "internet_access": {},
+    "junction": {},
+    "landuse": {},
     "leisure": {
       "slipway": true,
       "track": true
@@ -100,7 +82,8 @@
       "groyne": true,
       "pier": true,
       "pipeline": true,
-      "torii": true
+      "torii": true,
+      "video_wall": true
     },
     "military": {
       "trench": true
@@ -113,8 +96,7 @@
       "tree_row": true,
       "valley": true
     },
-    "office": {
-    },
+    "office": {},
     "piste:type": {
       "downhill": true,
       "hike": true,
@@ -124,15 +106,14 @@
       "sled": true,
       "sleigh": true
     },
-    "place": {
-    },
+    "place": {},
     "playground": {
       "balancebeam": true,
       "slide": true,
       "zipwire": true
     },
-    "polling_station": {
-    },
+    "police": {},
+    "polling_station": {},
     "power": {
       "cable": true,
       "line": true,
@@ -141,14 +122,10 @@
     "public_transport": {
       "platform": true
     },
-    "residential": {
-    },
-    "seamark:type": {
-    },
-    "shop": {
-    },
-    "telecom": {
-    },
+    "residential": {},
+    "seamark:type": {},
+    "shop": {},
+    "telecom": {},
     "tourism": {
       "artwork": true,
       "attraction": true

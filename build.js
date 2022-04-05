@@ -1,5 +1,6 @@
 const fs = require('fs');
-const stringify = require('json-stable-stringify');
+const withLocale = require('locale-compare')('en-US');
+const stringify = require('@aitodotai/json-stringify-pretty-compact');
 const all = require('@openstreetmap/id-tagging-schema/dist/presets.json');
 
 // Because of the open nature of tagging, iD will never have a complete
@@ -42,4 +43,19 @@ presets.forEach(d => {
   }
 });
 
-fs.writeFileSync('areaKeys.json', stringify({ areaKeys: areaKeys }, { space: 2 }));
+fs.writeFileSync('areaKeys.json', stringify({ areaKeys: sortObject(areaKeys) }, { maxLength: 1 }));
+
+
+
+// Returns an object with sorted keys and sorted values.
+// (This is useful for file diffing)
+function sortObject(obj) {
+  if (!obj) return null;
+
+  let sorted = {};
+  Object.keys(obj).sort(withLocale).forEach(k => {
+    sorted[k] = Array.isArray(obj[k]) ? obj[k].sort(withLocale) : obj[k];
+  });
+
+  return sorted;
+}
