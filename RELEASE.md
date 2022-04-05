@@ -1,10 +1,10 @@
 ## Release Checklist
 
-Whenever a new version of iD is released:
+Whenever a new version of id-tagging-schema is released:
 
 ```bash
 - Update version number `package.json`
-- Update iD dependency in `package.json`
+- Update id-tagging-schema dependency in `package.json`
 $  npm install
 $  npm run test
 $  git add .
