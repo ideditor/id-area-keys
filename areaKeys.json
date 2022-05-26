@@ -109,7 +109,13 @@
     "place": {},
     "playground": {
       "balancebeam": true,
+      "basketswing": true,
+      "hopscotch": true,
+      "horizontal_bar": true,
+      "seesaw": true,
       "slide": true,
+      "structure": true,
+      "swing": true,
       "zipwire": true
     },
     "police": {},
