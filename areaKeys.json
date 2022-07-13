@@ -39,6 +39,7 @@
     "bridge:support": {},
     "building": {},
     "building:part": {},
+    "cemetery": {},
     "club": {},
     "craft": {},
     "demolished:building": {},
@@ -74,6 +75,7 @@
     },
     "man_made": {
       "breakwater": true,
+      "carpet_hanger": true,
       "crane": true,
       "cutline": true,
       "dyke": true,
