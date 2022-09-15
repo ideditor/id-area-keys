@@ -16,7 +16,7 @@
   "module": "index.mjs",
   "devDependencies": {
     "@aitodotai/json-stringify-pretty-compact": "^1.3.0",
-    "@openstreetmap/id-tagging-schema": "3.4.2",
+    "@openstreetmap/id-tagging-schema": "3.5.1",
     "@rollup/plugin-json": "^4.1.0",
     "locale-compare": "^2.0.0",
     "npm-run-all": "^4.1.5",
