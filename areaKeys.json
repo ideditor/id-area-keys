@@ -26,7 +26,8 @@
     },
     "allotments": {},
     "amenity": {
-      "bench": true
+      "bench": true,
+      "weighbridge": true
     },
     "area:highway": {},
     "attraction": {
@@ -74,6 +75,7 @@
       "track": true
     },
     "man_made": {
+      "yes": true,
       "breakwater": true,
       "carpet_hanger": true,
       "crane": true,
@@ -95,6 +97,7 @@
       "cliff": true,
       "coastline": true,
       "ridge": true,
+      "strait": true,
       "tree_row": true,
       "valley": true
     },
@@ -110,14 +113,19 @@
     },
     "place": {},
     "playground": {
+      "activitypanel": true,
       "balancebeam": true,
       "basketswing": true,
+      "bridge": true,
+      "climbingwall": true,
       "hopscotch": true,
       "horizontal_bar": true,
       "seesaw": true,
       "slide": true,
       "structure": true,
       "swing": true,
+      "tunnel_tube": true,
+      "water": true,
       "zipwire": true
     },
     "police": {},
@@ -139,6 +147,7 @@
       "attraction": true
     },
     "traffic_calming": {
+      "yes": true,
       "bump": true,
       "chicane": true,
       "choker": true,
@@ -146,6 +155,7 @@
       "dip": true,
       "hump": true,
       "island": true,
+      "mini_bumps": true,
       "rumble_strip": true
     },
     "waterway": {

@@ -1,7 +1,10 @@
-const fs = require('fs');
-const withLocale = require('locale-compare')('en-US');
-const stringify = require('@aitodotai/json-stringify-pretty-compact');
-const all = require('@openstreetmap/id-tagging-schema/dist/presets.json');
+import fs from 'node:fs';
+import localeCompare from 'locale-compare';
+import stringify from '@aitodotai/json-stringify-pretty-compact';
+const withLocale = localeCompare('en-US');
+
+import presetsJSON from '@openstreetmap/id-tagging-schema/dist/presets.json' assert {type: 'json'};
+
 
 // Because of the open nature of tagging, iD will never have a complete
 // list of tags used in OSM, so we want it to have logic like "assume
@@ -15,7 +18,7 @@ const all = require('@openstreetmap/id-tagging-schema/dist/presets.json');
 // (see `iD.osmWay#isArea()`). In other words, the keys of L form the keeplist,
 // and the subkeys form the discardlist.
 const ignore = ['area', 'barrier', 'highway', 'footway', 'railway', 'type'];
-const presets = Object.values(all).filter(p => !p.suggestion);
+const presets = Object.values(presetsJSON).filter(p => !p.suggestion);
 let areaKeys = {};
 
 // keeplist
