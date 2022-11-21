@@ -54,13 +54,13 @@ an area feature, or `false` if those tags imply a linear feature.
 ##### Example:
 
 ```js
- const ak = require('id-area-keys');
+import { isArea } from 'id-area-keys';
 
- ak.isArea({ 'natural': 'wood' });
- // true - a closed way tagged `natural=wood` is an area filled with trees
+isArea({ 'natural': 'wood' });
+// true - a closed way tagged `natural=wood` is an area filled with trees
 
- ak.isArea({ 'natural': 'tree_row' });
- // false - a closed way tagged `natural=tree_row` is a linear ring of trees
+isArea({ 'natural': 'tree_row' });
+// false - a closed way tagged `natural=tree_row` is a linear ring of trees
 ```
 
 
