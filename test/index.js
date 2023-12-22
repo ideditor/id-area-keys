@@ -1,75 +1,66 @@
-import { test } from 'tap';
+import { test } from 'node:test';
+import { strict as assert } from 'node:assert';
 import { areaKeys, isArea } from '../index.mjs';
 
-test('id-area-keys', t => {
+test('id-area-keys', async t => {
 
-  t.test('areaKeys', t => {
-    t.test('exports areaKeys', t => {
-      t.type(areaKeys, 'object');
-      t.end();
+  await t.test('areaKeys', async t => {
+    await t.test('exports areaKeys', t => {
+      assert.ok(areaKeys instanceof Object);
     });
 
-    t.test('areaKeys includes certain keys', t => {
-      t.ok(areaKeys.hasOwnProperty('amenity'), 'amenity');
-      t.ok(areaKeys.hasOwnProperty('building'), 'building');
-      t.ok(areaKeys.hasOwnProperty('landuse'), 'landuse');
-      t.ok(areaKeys.hasOwnProperty('leisure'), 'leisure');
-      t.ok(areaKeys.hasOwnProperty('man_made'), 'man_made');
-      t.ok(areaKeys.hasOwnProperty('natural'), 'natural');
-      t.ok(areaKeys.hasOwnProperty('waterway'), 'waterway');
-      t.end();
+    await t.test('areaKeys includes certain keys', t => {
+      assert.equal(true, areaKeys.hasOwnProperty('amenity'), 'amenity');
+      assert.equal(true, areaKeys.hasOwnProperty('building'), 'building');
+      assert.equal(true, areaKeys.hasOwnProperty('landuse'), 'landuse');
+      assert.equal(true, areaKeys.hasOwnProperty('leisure'), 'leisure');
+      assert.equal(true, areaKeys.hasOwnProperty('man_made'), 'man_made');
+      assert.equal(true, areaKeys.hasOwnProperty('natural'), 'natural');
+      assert.equal(true, areaKeys.hasOwnProperty('waterway'), 'waterway');
     });
 
-    t.test('areaKeys includes certain discardlisted keys', t => {
-      t.ok(areaKeys.amenity.hasOwnProperty('bench'), 'bench');
-      t.ok(areaKeys.leisure.hasOwnProperty('track'), 'track');
-      t.ok(areaKeys.man_made.hasOwnProperty('pipeline'), 'pipeline');
-      t.ok(areaKeys.natural.hasOwnProperty('tree_row'), 'tree_row');
-      t.ok(areaKeys.waterway.hasOwnProperty('river'), 'river');
-      t.end();
+    await t.test('areaKeys includes certain discardlisted keys', t => {
+      assert.equal(true, areaKeys.amenity.hasOwnProperty('bench'), 'bench');
+      assert.equal(true, areaKeys.leisure.hasOwnProperty('track'), 'track');
+      assert.equal(true, areaKeys.man_made.hasOwnProperty('pipeline'), 'pipeline');
+      assert.equal(true, areaKeys.natural.hasOwnProperty('tree_row'), 'tree_row');
+      assert.equal(true, areaKeys.waterway.hasOwnProperty('river'), 'river');
     });
 
-    t.test('areaKeys skips certain keys', t => {
-      t.notOk(areaKeys.hasOwnProperty('area'), 'area');
-      t.notOk(areaKeys.hasOwnProperty('barrier'), 'barrier');
-      t.notOk(areaKeys.hasOwnProperty('highway'), 'highway');
-      t.notOk(areaKeys.hasOwnProperty('footway'), 'footway');
-      t.notOk(areaKeys.hasOwnProperty('railway'), 'railway');
-      t.notOk(areaKeys.hasOwnProperty('type'), 'type');
-      t.end();
+    await t.test('areaKeys skips certain keys', t => {
+      assert.equal(false, areaKeys.hasOwnProperty('area'), 'area');
+      assert.equal(false, areaKeys.hasOwnProperty('barrier'), 'barrier');
+      assert.equal(false, areaKeys.hasOwnProperty('highway'), 'highway');
+      assert.equal(false, areaKeys.hasOwnProperty('footway'), 'footway');
+      assert.equal(false, areaKeys.hasOwnProperty('railway'), 'railway');
+      assert.equal(false, areaKeys.hasOwnProperty('type'), 'type');
     });
-
-    t.end();
   });
 
-  t.test('isArea', t => {
-    t.test('exports isArea', t => {
-      t.type(isArea, 'function');
-      t.end();
+  await t.test('isArea', async t => {
+    await t.test('exports isArea', t => {
+      assert.ok(isArea instanceof Function);
     });
 
-    t.test('natural=wood is an area', t => {
-      t.ok(isArea({ 'natural': 'wood' }));
-      t.end();
+    await t.test('natural=wood is an area', t => {
+      const result = isArea({ 'natural': 'wood' });
+      assert.equal(result, true);
     });
 
-    t.test('natural=tree_row is not an area', t => {
-      t.notOk(isArea({ 'natural': 'tree_row' }));
-      t.end();
+    await t.test('natural=tree_row is not an area', t => {
+      const result = isArea({ 'natural': 'tree_row' });
+      assert.equal(result, false);
     });
 
-    t.test('area=yes is an area', t => {
-      t.ok(isArea({ 'natural': 'tree_row', 'area': 'yes' }));
-      t.end();
+    await t.test('area=yes is an area', t => {
+      const result = isArea({ 'natural': 'tree_row', 'area': 'yes' });
+      assert.equal(result, true);
     });
 
-    t.test('area=no is not an area', t => {
-      t.notOk(isArea({ 'natural': 'wood', 'area': 'no' }));
-      t.end();
+    await t.test('area=no is not an area', t => {
+      const result = isArea({ 'natural': 'tree_row', 'area': 'no' });
+      assert.equal(result, false);
     });
-
-    t.end();
   });
 
-  t.end();
 });
