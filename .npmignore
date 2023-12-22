@@ -2,7 +2,6 @@
 /.vscode
 /.github
 /coverage
-/dist/javascript
 /node_modules
 /test
 
