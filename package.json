@@ -13,20 +13,31 @@
     "Bryan Housel <bhousel@gmail.com> (https://github.com/bhousel)"
   ],
   "type": "module",
-  "main": "index.js",
-  "module": "index.mjs",
+  "main": "./dist/areaKeys.cjs",
+  "module": "./dist/areaKeys.mjs",
+  "exports": {
+    "require": "./dist/areaKeys.cjs",
+    "import": "./dist/areaKeys.mjs",
+    "*": "./*"
+  },
   "devDependencies": {
     "@aitodotai/json-stringify-pretty-compact": "^1.3.0",
     "@openstreetmap/id-tagging-schema": "5.0.1",
-    "@rollup/plugin-json": "^5.0.1",
+    "esbuild": "^0.19.10",
     "locale-compare": "^2.0.0",
     "npm-run-all": "^4.1.5",
-    "rollup": "^3.3.0"
+    "shx": "^0.3.4"
   },
   "scripts": {
-    "all": "npm run test",
-    "build": "node build.js && rollup -c",
-    "test": "run-s build test:node",
+    "all": "run-s clean build dist test",
+    "build": "run-s build:json",
+    "build:json": "node build.js",
+    "clean": "shx rm -rf ./areaKeys.json dist/",
+    "dist": "run-p dist:**",
+    "dist:browser": "esbuild ./index.mjs --platform=browser --format=iife --bundle --global-name=areaKeys --sourcemap --outfile=./dist/areaKeys.iife.js",
+    "dist:cjs": "esbuild ./index.mjs --platform=node --format=cjs --bundle --sourcemap --outfile=./dist/areaKeys.cjs",
+    "dist:mjs": "esbuild ./index.mjs --platform=neutral --format=esm --bundle --sourcemap --outfile=./dist/areaKeys.mjs",
+    "test": "run-s test:node",
     "test:node": "node --test test/"
   },
   "engines": {

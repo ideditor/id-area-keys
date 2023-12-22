@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import { strict as assert } from 'node:assert';
-import { areaKeys, isArea } from '../index.mjs';
+import { areaKeys, isArea } from '../dist/areaKeys.mjs';
 
 test('id-area-keys', async t => {
 

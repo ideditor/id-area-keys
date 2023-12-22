@@ -7,9 +7,9 @@
 ### areaKeys
 
 This package contains the `areaKeys` data structure extracted from the
-[OpenStreetMap iD Editor project](https://github.com/openstreetmap/iD).
+[OpenStreetMap id-tagging-schema project](https://github.com/openstreetmap/id-tagging-schema).
 
-Because of the open nature of OpenStreetMap tagging, iD will never have a
+Because of the open nature of OpenStreetMap tagging, there never be a
 complete list of tags used in OSM, so we want it to have logic like "assume
 that a closed way with an amenity tag is an area, unless the amenity
 is one of these specific types".

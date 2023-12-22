@@ -6,7 +6,7 @@ const withLocale = localeCompare('en-US');
 import presetsJSON from '@openstreetmap/id-tagging-schema/dist/presets.json' assert {type: 'json'};
 
 
-// Because of the open nature of tagging, iD will never have a complete
+// Because of the open nature of tagging, there will never be a complete
 // list of tags used in OSM, so we want it to have logic like "assume
 // that a closed way with an amenity tag is an area, unless the amenity
 // is one of these specific types". This function computes a structure
@@ -46,7 +46,10 @@ presets.forEach(d => {
   }
 });
 
-fs.writeFileSync('areaKeys.json', stringify({ areaKeys: sortObject(areaKeys) }, { maxLength: 1 }));
+if (!fs.existsSync('./dist')) {
+  fs.mkdirSync('./dist');
+}
+fs.writeFileSync('./dist/areaKeys.json', stringify({ areaKeys: sortObject(areaKeys) }, { maxLength: 1 }));
 
 
 
