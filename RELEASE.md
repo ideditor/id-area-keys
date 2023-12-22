@@ -6,7 +6,7 @@ Whenever a new version of id-tagging-schema is released:
 - Update version number `package.json`
 - Update id-tagging-schema dependency in `package.json`
 $  npm install
-$  npm run test
+$  npm run all
 $  git add .
 $  git commit -m 'vA.B.C'
 $  git tag vA.B.C
