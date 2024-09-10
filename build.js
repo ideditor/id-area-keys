@@ -3,7 +3,7 @@ import localeCompare from 'locale-compare';
 import stringify from '@aitodotai/json-stringify-pretty-compact';
 const withLocale = localeCompare('en-US');
 
-import presetsJSON from '@openstreetmap/id-tagging-schema/dist/presets.json' assert {type: 'json'};
+import presetsJSON from '@openstreetmap/id-tagging-schema/dist/presets.json' with {type: 'json'};
 
 
 // Because of the open nature of tagging, there will never be a complete

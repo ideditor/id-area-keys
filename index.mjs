@@ -1,4 +1,4 @@
-import json from './dist/areaKeys.json' assert {type: 'json'};
+import json from './dist/areaKeys.json' with {type: 'json'};
 export let { areaKeys } = json;
 
 /**
