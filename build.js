@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import localeCompare from 'locale-compare';
-import stringify from '@aitodotai/json-stringify-pretty-compact';
+import stringify from 'json-stringify-pretty-compact';
 const withLocale = localeCompare('en-US');
 
 import presetsJSON from '@openstreetmap/id-tagging-schema/dist/presets.json' with {type: 'json'};
